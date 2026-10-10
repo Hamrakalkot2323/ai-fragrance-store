@@ -899,3 +899,118 @@ a {
 .perfume-card:hover .perfume-photo {
   transform: scale(1.04);
 }
+
+
+/* INDIVIDUAL PERFUME DETAIL PAGE */
+.product-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 36px 6% 90px;
+}
+
+.back-button {
+  border: 1px solid #d8cfc3;
+  background: transparent;
+  color: #40372f;
+  padding: 12px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font: inherit;
+  margin-bottom: 36px;
+  transition: background 0.2s ease;
+}
+
+.back-button:hover {
+  background: #eee7de;
+}
+
+.product-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  gap: 64px;
+  align-items: center;
+}
+
+.product-detail-image {
+  background: #f0e9df;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-detail-image img {
+  width: 100%;
+  height: 560px;
+  object-fit: contain;
+  display: block;
+}
+
+.product-detail-info h1 {
+  font-family: inherit;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 12px 0 20px;
+}
+
+.product-detail-price {
+  font-size: 1.35rem;
+  margin-bottom: 24px;
+}
+
+.product-detail-description {
+  line-height: 1.8;
+  color: #756b60;
+}
+
+.product-detail-divider {
+  height: 1px;
+  background: #ded5ca;
+  margin: 28px 0;
+}
+
+.product-detail-fact {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e7dfd5;
+}
+
+.product-detail-fact span {
+  color: #887c70;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.product-detail-fact strong {
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.product-detail-info > .favorite-button {
+  margin-top: 28px;
+}
+
+@media (max-width: 700px) {
+  .product-detail {
+    padding: 24px 5% 60px;
+  }
+
+  .product-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .product-detail-image {
+    min-height: 320px;
+  }
+
+  .product-detail-image img {
+    height: 380px;
+  }
+}
