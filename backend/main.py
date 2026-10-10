@@ -1,4 +1,4 @@
-
+from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException
@@ -27,6 +27,16 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class RecommendationRequest(BaseModel):
     message: str = Field(
@@ -47,6 +57,30 @@ def home():
 @app.get("/health")
 def health_check():
     return {"status": "healthy"}
+
+
+@app.get("/perfumes")
+def get_perfumes():
+    catalog = app.state.catalog
+
+    return {
+        "count": len(catalog),
+        "perfumes": [
+            {
+                "id": int(row["id"]),
+                "name": row["name"],
+                "brand": row["brand"],
+                "price_aed": float(row["price_aed"]),
+                "scent_family": row["scent_family"],
+                "notes": row["notes"],
+                "occasion": row["occasion"],
+                "longevity_hours": int(row["longevity_hours"]),
+                "description": row["description"],
+            }
+            for _, row in catalog.iterrows()
+        ],
+    }
+
 
 
 @app.post("/recommend")
