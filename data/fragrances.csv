@@ -1,0 +1,11 @@
+id,name,brand,gender,scent_family,notes,occasion,longevity_hours,price_aed,description
+1,Fresh Citrus,Maison Lumiere,Unisex,Citrus,"bergamot, lemon, orange",Daily,5,120,"A bright citrus fragrance for everyday freshness."
+2,Velvet Rose,Flora House,Women,Floral,"rose, jasmine, musk",Evening,8,220,"A soft floral fragrance suited to elegant evenings."
+3,Ocean Drift,Blue Coast,Men,Aquatic,"sea salt, bergamot, cedarwood",Daily,6,160,"A clean aquatic fragrance with a fresh ocean-inspired character."
+4,Amber Nights,Noor Essence,Unisex,Oriental,"amber, vanilla, sandalwood",Evening,10,280,"A warm, rich fragrance for special occasions and long-lasting wear."
+5,Green Escape,Wild Botanics,Unisex,Woody,"vetiver, green tea, cedarwood",Office,7,190,"A balanced woody fragrance with green notes for work."
+6,Sweet Cloud,Cloud Nine,Women,Gourmand,"vanilla, caramel, pear",Casual,7,150,"A sweet gourmand fragrance with creamy vanilla and caramel."
+7,Spice Route,Desert Oud,Men,Spicy,"cardamom, cinnamon, oud",Evening,9,250,"A bold spicy fragrance with oud for evening wear."
+8,Soft Musk,Pure Notes,Unisex,Musky,"white musk, iris, sandalwood",Office,6,175,"A subtle musky fragrance for understated everyday elegance."
+9,Tropical Bloom,Island Aura,Women,Fruity Floral,"mango, peach, jasmine",Casual,5,135,"A fruity floral fragrance with a bright tropical character."
+10,Midnight Woods,Forest & Co,Men,Woody,"patchouli, cedarwood, amber",Evening,9,240,"A deep woody fragrance with warm amber notes."
